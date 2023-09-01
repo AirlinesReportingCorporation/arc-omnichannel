@@ -5,6 +5,7 @@ import {
   ProductCallout,
   ProductText,
 } from "arccorp-vars";
+import NDCLatest from "./component/ndc-cards";
 
 export default function Omnichannel() {
   return (
@@ -116,9 +117,9 @@ export default function Omnichannel() {
                 <a href="https://www.traverse.tech/">
                   <div className="company-card">
                     <div className="company-card-inner">
-                      <a className="company" href="https://www.traverse.tech/">
+                      <div className="company">
                         <img src="https://www2.arccorp.com/globalassets/about-us/omnichannel/Traverse-Logo-Color.svg" />
-                      </a>
+                      </div>
                       <div className="company-text">
                         Traverse Technologies is an independent subsidiary of
                         ARC, focusing on innovation and delivery excellence for
@@ -137,12 +138,9 @@ export default function Omnichannel() {
               <div className="col-lg-6">
                 <a href="https://www.traxo.com/">
                   <div className="company-card">
-                    <a href="https://www.traxo.com/">
-                      <img
-                        className="company"
-                        src="https://www2.arccorp.com/globalassets/about-us/omnichannel/traxo.png"
-                      />
-                    </a>
+                    <div className="company">
+                      <img src="https://www2.arccorp.com/globalassets/about-us/omnichannel/traxo.png" />
+                    </div>
                     <div className="company-text">
                       As a leading data aggregation and B2B travel technology
                       provider, Traxo helps travel managers gain visibility into
@@ -172,8 +170,8 @@ export default function Omnichannel() {
                   <h2>New Distribution Capability (NDC)</h2>
                   <p>
                     New Distribution Capability (NDC) enables airlines and
-                    travel agencies to exchange richer content and data.
-                    With ARC’s secure, flexible and cost-effective settlement
+                    travel agencies to exchange richer content and data. With
+                    ARC’s secure, flexible and cost-effective settlement
                     platform, airlines and travel agencies can create
                     customized, effectively managed partnerships that leverage
                     NDC.
@@ -197,9 +195,8 @@ export default function Omnichannel() {
                     emerging payment methods.
                   </p>
                   <p>
-                  ARC supports a variety of standard
-                    and emerging forms of payment, including PayPal, Alipay and
-                    UnionPay.
+                    ARC supports a variety of standard and emerging forms of
+                    payment, including PayPal, Alipay and UnionPay.
                   </p>
                   <a
                     target="_blank"
@@ -220,9 +217,8 @@ export default function Omnichannel() {
                     accelerate business growth.
                   </p>
                   <p>
-                  ARC's data is versatile,
-                    delivering actionable insights into broad trends and
-                    distinct details.
+                    ARC's data is versatile, delivering actionable insights into
+                    broad trends and distinct details.
                   </p>
                   <a
                     target="_blank"
@@ -244,7 +240,7 @@ export default function Omnichannel() {
         cta="Contact Us"
         ctaLink="https://www2.arccorp.com/about-us/contact-us/"
       />
-      <ProductText id="latest" title="Related Articles"/>
+      <ProductText id="latest" title="Related Articles" body={<NDCLatest/>} />
     </div>
   );
 }

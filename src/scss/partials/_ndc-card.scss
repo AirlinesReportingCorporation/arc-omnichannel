@@ -1,0 +1,30 @@
+@use "~arccorp-vars/src/scss/main.scss";
+
+.ndc-latest-title {
+  font-size: 36px;
+  line-height: 36px;
+  font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
+  margin-bottom: 45px;
+}
+
+.ndc-latest-card {
+  border-radius: 10px;
+  background: main.$white;
+  border: main.$arc-teal 1px solid;
+  margin-bottom: 15px;
+
+  .ndc-latest-text {
+    padding: 40px 20px 15px;
+    height: 350px;
+  }
+  .ndc-latest-text-title {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 22px;
+    height: 70px;
+    font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+  }
+  .ndc-latest-description {
+    height: 150px;
+  }
+}
