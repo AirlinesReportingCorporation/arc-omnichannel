@@ -27,8 +27,8 @@ export default function Omnichannel() {
             providers to shop for, buy and service their travel. ARC believes
             the future of air travel retailing is a{" "}
             <span>“buy anywhere, service anywhere”</span> omnichannel ecosystem
-            rather than today’s channel-exclusive environments. Through its
-            products, solutions and investments, ARC{" "}
+            rather than today’s channel-exclusive environments. <br />
+            <br /> Through its products, solutions and investments, ARC{" "}
             <span>
               connects airlines, travel agencies, travel managers and travelers
               across channels{" "}
@@ -41,28 +41,34 @@ export default function Omnichannel() {
         backgroundImage="https://www2.arccorp.com/globalassets/homepage/redesign/slides/carousel27.jpg"
       />
       <ProductText
-        id="overview"
         className="bg-color-tarmac"
-        eyebrow="overview"
-        title="Seamless Travel Experiences"
-        titleClass="white"
-        subTitleClass=" "
-        subtitle="The modern traveler expects a shopping experience that is streamlined, simple and consistent across every channel. In reality, travelers currently have to make tradeoffs between the direct and indirect channels, choosing between airline status perks and TMC servicing. In an evolved environment, travelers can access the same rich content, attentive service and seamless experience — no matter which booking channel they choose."
+        id="overview"
         body={
           <>
-            <hr
-              style={{
-                color: "white",
-                marginTop: "60px",
-                marginBottom: "60px",
-              }}
-            />
-
-            <div style={{ textAlign: "right" }}>
-              <h2 className="product-header white">Powerful Data</h2>
-              <div className="row">
-                <div className="col-lg-12">
-                  <div className="product-callout-copy">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="ndc-overview-info">
+                  <div class="ndc-overview-info-copy">
+                    <div className="overview-header">
+                      Seamless Travel Experiences
+                    </div>
+                    The modern traveler expects a shopping experience that is
+                    streamlined, simple and consistent across every channel. In
+                    reality, travelers currently have to make tradeoffs between
+                    the direct and indirect channels, choosing between airline
+                    status perks and TMC servicing. In an evolved environment,
+                    travelers can access the same rich content, attentive
+                    service and seamless experience — no matter which booking
+                    channel they choose.
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="ndc-overview-info">
+                  <div class="ndc-overview-info-copy">
+                    <div className="overview-header">
+                    Powerful Data
+                    </div>
                     Effective retailing is driven by transparency. Travelers
                     want enough information to make the best buying decision.
                     Likewise, travel managers need greater visibility into their
@@ -75,20 +81,12 @@ export default function Omnichannel() {
                   </div>
                 </div>
               </div>
-            </div>
-            <hr
-              style={{
-                color: "white",
-                marginTop: "60px",
-                marginBottom: "60px",
-              }}
-            />
-
-            <div>
-              <h2 className="product-header white">Channel-Agnostic Service</h2>
-              <div className="row">
-                <div className="col-lg-12">
-                  <div className="product-callout-copy">
+              <div class="col-lg-4">
+                <div class="ndc-overview-info">
+                  <div class="ndc-overview-info-copy">
+                    <div className="overview-header">
+                    Channel-Agnostic Service
+                    </div>
                     In today’s environment, TMCs are unable to service tickets
                     booked in the direct channel. We want to change that. By
                     expanding servicing capabilities to authorized TMCs,
@@ -160,7 +158,7 @@ export default function Omnichannel() {
       />
       <ProductText
         id="technology"
-        className="bg-color-lightgray "
+        className="bg-color-fog"
         title="ARC's Technology"
         body={
           <>
@@ -240,7 +238,12 @@ export default function Omnichannel() {
         cta="Contact Us"
         ctaLink="https://www2.arccorp.com/about-us/contact-us/"
       />
-      <ProductText id="latest" title="Related Articles" body={<NDCLatest/>} />
+      <ProductText
+        id="latest"
+        title="Related Articles"
+        className="bg-color-fog"
+        body={<NDCLatest />}
+      />
     </div>
   );
 }

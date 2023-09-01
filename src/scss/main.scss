@@ -4,6 +4,51 @@
 .omnichannel-page {
   max-width: 100vw;
   width: 100%;
+
+  .atd-jumbo {
+    box-shadow: inset 0em -40em 30em 0em main.$tarmac;
+    padding-bottom: 0;
+  }
+
+  .product-callout {
+    border-top: none;
+  }
+
+  .product-callout-copy {
+    font-family: SourceSansPro-Light,Arial,Helvetica,sans-serif;
+    padding-bottom: 120px;
+    max-width: unset !important;
+  }
+}
+
+#overview {
+  .callout-container {
+    padding-top: 0;
+  }
+  .product-eyebrow {
+    display: none;
+  }
+  .product-header {
+    display:none;
+  }
+
+  .ndc-overview-info {
+    border-top: 1px solid #888;
+    padding-top: 30px;
+    padding-bottom: 5px;
+  }
+
+  .ndc-overview-info-copy {
+    font-size: 24px;
+    line-height: 28px;
+    color: #888;
+
+    .overview-header {
+      font-family: main.$arc-font-semibold;
+      color: main.$white;
+      padding-bottom:15px;
+    }
+  }
 }
 
 .company-card {
