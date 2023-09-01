@@ -94,8 +94,17 @@
   }
 }
 
-.atd-jumbo {
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+#technology {
+  * > .portfolio-card {
+    min-height: 470px;
+    position: relative;
+
+    a {
+      margin-bottom: 30px !important;
+      bottom: 0;
+      position:absolute ;
+    }
+  }
 }
 
 @media (max-width: 1259px) {
