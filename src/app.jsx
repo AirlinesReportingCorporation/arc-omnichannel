@@ -15,7 +15,7 @@ export default function Omnichannel() {
         links={[
           { title: "Investments", url: "#investments" },
           { title: "Technology", url: "#technology" },
-          { title: "Related Articles", url: "#latest" },
+          { title: "Related Articles", url: "#relatedarticles" },
         ]}
       />
       <ProductJumbo
@@ -234,7 +234,7 @@ export default function Omnichannel() {
         }
       />
       <ProductText
-        id="latest"
+        id="relatedarticles"
         title="Related Articles"
         className="bg-color-white"
         body={<NDCLatest />}
