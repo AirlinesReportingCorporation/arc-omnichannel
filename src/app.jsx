@@ -13,9 +13,9 @@ export default function Omnichannel() {
       <Stickynav
         title="Omnichannel Retailing"
         links={[
-          { title: "ARC's Investments", url: "#investments" },
+          { title: "Investments", url: "#investments" },
           { title: "Technology", url: "#technology" },
-          { title: "The Latest", url: "#latest" },
+          { title: "Related Articles", url: "#latest" },
         ]}
       />
       <ProductJumbo
@@ -158,6 +158,7 @@ export default function Omnichannel() {
       />
       <ProductText
         id="technology"
+        eyebrow="Technology"
         className="bg-color-fog"
         title="ARC's Technology"
         body={
@@ -232,18 +233,20 @@ export default function Omnichannel() {
           </>
         }
       />
+      <ProductText
+        id="latest"
+        title="Related Articles"
+        className="bg-color-white"
+        body={<NDCLatest />}
+      />
       <ProductCallout
         title="Get Started with ARC"
+        className="bg-color-fog"
         subtitle="Want to learn more about ARC’s growing omnichannel retailing capabilities? Contact ARC or your ARC Customer Success representative for more information."
         cta="Contact Us"
         ctaLink="https://www2.arccorp.com/about-us/contact-us/"
       />
-      <ProductText
-        id="latest"
-        title="Related Articles"
-        className="bg-color-fog"
-        body={<NDCLatest />}
-      />
+      
     </div>
   );
 }

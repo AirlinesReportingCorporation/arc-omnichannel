@@ -31,18 +31,20 @@ export default class NDCLatest extends Component {
     return (
       <div class="row">
         {latestMentions.map((post) => (
-          <div class="col-lg-4">
-            <div class="ndc-latest-card">
-              <div class="ndc-latest-text">
-                <div class="ndc-latest-text-title">{post.title}</div>
-                <div class="ndc-latest-description">
-                  <p>{post.copy}</p>
+          <div class="col-lg-3">
+            <a href={post.link} className="ndc-card-link">
+              <div class="ndc-latest-card">
+                <div class="ndc-latest-text">
+                  <div class="ndc-latest-text-title">{post.title}</div>
+                  <div class="ndc-latest-description">
+                    <p>{post.copy}</p>
+                  </div>
+                  <a href={post.link} class="link-download">
+                    Learn More <i class="fas fa-chevron-right"></i>
+                  </a>
                 </div>
-                <a href={post.link} class="link-download">
-                  Learn More <i class="fas fa-chevron-right"></i>
-                </a>
               </div>
-            </div>
+            </a>
           </div>
         ))}
       </div>

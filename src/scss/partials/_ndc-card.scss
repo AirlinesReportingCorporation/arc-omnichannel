@@ -6,12 +6,19 @@
   font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
   margin-bottom: 45px;
 }
+a.ndc-card-link {
+  text-decoration: none;
+  color: unset;
+  &:hover {
+    text-decoration: none;
+    color: unset;
+  }
+}
 
 .ndc-latest-card {
   border-radius: 10px;
-  background: main.$white;
-  border: main.$arc-teal 1px solid;
-  margin-bottom: 15px;
+  background: main.$fog;
+  margin-bottom: 30px;
 
   .ndc-latest-text {
     padding: 40px 20px 15px;
