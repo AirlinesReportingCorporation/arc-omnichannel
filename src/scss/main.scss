@@ -1,6 +1,10 @@
 @use "~arccorp-vars/src/scss/main.scss";
 @use "./partials/ndc-card";
 
+.relatedArticles {
+  display:none;
+  }
+
 .omnichannel-page {
   max-width: 100vw;
   width: 100%;
